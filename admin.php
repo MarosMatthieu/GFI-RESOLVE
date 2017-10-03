@@ -59,6 +59,6 @@
      }
  }
  echo VerifTelFr($phone)
-?> 
+?>  
 
     </html>
