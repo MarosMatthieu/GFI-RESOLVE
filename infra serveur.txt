@@ -1,0 +1,27 @@
+PHPMYADMIN
+http://217.182.75.177/phpmyadmin/
+chemin : /var/www/phpmyadmin/
+
+login phpmyadmin : root
+mdp : workshopb3
+
+Site Web :
+http://217.182.75.177/
+
+chemin : /var/www/gfi-brest.tk/
+
+
+
+login SSH :
+
+root
+mdp : epsiworkshopb3 
+
+login FTP :
+
+root
+epsiworkshopb3
+
+port 22
+
+
