@@ -30,10 +30,14 @@ form {
   outline: none;
 }
 .search_bar button[type=submit] {
+	
+
+	
   background: -webkit-linear-gradient(#237cd4, #1e6ab5);
-  background: linear-gradient(#237cd4, #1e6ab5);
+  
+  background: linear-gradient( #fc6a11 , #fc8011);
   color: rgba(255, 255, 255, 0);
-  border: 1px solid #1C62A8;
+  border: 1px solid #fc8011;
   width: 10%;
   min-width: 56px;
   position: absolute;
