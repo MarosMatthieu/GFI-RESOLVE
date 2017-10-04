@@ -14,7 +14,7 @@ $Resultat = tableSQL($sql);
 $compteur=0;
 
     if ($Resultat>0) {
-    	foreach ($results as $ligne) {
+        foreach ($Resultat as $ligne) {
     		//on extrait chaque valeur de la ligne courante de chaque tournees.
     		$ETAT = $ligne[0];
     		$TITLE = $ligne[1];
