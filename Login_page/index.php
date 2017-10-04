@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,7 +16,7 @@
 		<section class="formulaire">
 			<div class="form">
 			<form method="post" action="traitement.php">
-				<input type="text" name="Adresse mail" placeholder="login"/>
+				<input type="text" name="Adresse mail" placeholder="Login"/>
 			</form>
 			<br/>
 			<form method="post" action="traitement.php">
@@ -21,7 +24,7 @@
 			</form>
 			<br/>
 		
-			<input class="envoyer" type="submit" value="Envoyer"> 
+			<input class="envoyer" type="submit" value="Send"> 
 			</div>
 		</section>
 		
