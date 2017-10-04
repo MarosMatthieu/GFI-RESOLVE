@@ -4,7 +4,7 @@
 //include le fichier de connexion
 include 'connectAD.php';
 //Creation et stockage de la requette dans une variable
-$sql = ";";
+$sql = "";
 //execution de la requette avec executeSQL
 $CompteurResultat = compteSQL($sql);
 $Resultat = tableSQL($sql);
@@ -28,10 +28,10 @@ $compteur=0;
 			} else {
 ?>	
 	<tr>
-    	<td><?php echo $; ?></td>
-    	<td><?php echo $; ?></td>
-    	<td><?php echo $; ?></td>
-    	<td><?php echo $; ?></td>
+    	<td><?php echo 'FUCK' ?></td>
+    	<td><?php echo 'FUCK' ?></td>
+    	<td><?php echo 'FUCK' ?></td>
+    	<td><?php echo 'FUCK' ?></td>
     </tr>
 <?php 
 		} 

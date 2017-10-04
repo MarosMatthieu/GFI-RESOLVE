@@ -33,16 +33,7 @@
 			<th data-field="note" >Opération</th>
 		</tr>
 	</thead>
-	<tbody>
-		<tr>
-			<td></td>
-			<td>Valérie</td>
-			<td>01/09/2015</td>
-			<td>Français</td>
-			<td>12/20</td>
-		</tr>
-		
-	</tbody>
+	<?php include 'tableRow.php'; ?>
 </table>
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
