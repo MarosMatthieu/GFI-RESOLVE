@@ -1,0 +1,26 @@
+ <?php
+  $query = "SELECT * FROM travaux ORDER BY id ASC "; /* Exemple : PERSONNE */
+
+if ($result = mysqli_query($bdd, $query))
+{
+    while ($obj = mysqli_fetch_object($result))
+    {
+        ?>
+  <figure>
+  <div class="icon_profil_align">
+        <a title="Afficher" class="icon_profil" href="article.php?id=<?php echo $obj->id; ?>"><i class="fa fa-eye" aria-hidden="true"></i></a>
+        <a title="Modifier" class="icon_profil" href="article_modif.php?id=<?php echo $obj->id; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+
+
+-----------------------------------------
+
+
+
+$id = $_GET['id'];
+$query = "SELECT * FROM travaux WHERE id= $id"; /* Exemple : PERSONNE */
+
+
+if ($result = mysqli_query($bdd, $query)) {
+    /* Récupère un tableau d'objets */
+    while ($obj = mysqli_fetch_object($result)) {
+        ?>
