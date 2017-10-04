@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap Table - Filter control</title>
+  <title>Dashboard</title>
   
   
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
@@ -16,9 +16,6 @@
 
 <body>
   <div class="container">
-<h1>Bootstrap Table</h1>
-<p> Mémo pour les options du Bootstrap Table : <a href="http://bootstrap-table.wenzhixin.net.cn/documentation/">Bootstrap Table Documentation</a></p>
-<p>Eléments de Bootstrap Table utilisés : <a href="http://jsfiddle.net/wenyi/e3nk137y/3178/">Data Checkbox</a>, pour cocher les éléments à sélectionner, <a href="https://github.com/wenzhixin/bootstrap-table-examples/blob/master/extensions/filter-control.html">extension Filter control</a>, pour les filtres via les colonnes, <a href="https://github.com/kayalshri/tableExport.jquery.plugin">extension Data export</a> pour exporter</p>
 
 <div id="toolbar">
 		<select class="form-control">
@@ -37,11 +34,11 @@
 			 data-toolbar="#toolbar">
 	<thead>
 		<tr>
-			<th data-field="state" data-checkbox="true"></th>
-			<th data-field="prenom" data-filter-control="input" data-sortable="true">Prénom</th>
+			<th data-field="state" data-checkbox="true">state</th>
+			<th data-field="prenom" data-filter-control="input" data-sortable="true">Title</th>
 			<th data-field="date" data-filter-control="select" data-sortable="true">Date</th>
-			<th data-field="examen" data-filter-control="select" data-sortable="true">Examen</th>
-			<th data-field="note" data-sortable="true">Note</th>
+			<th data-field="examen" data-filter-control="select" data-sortable="true">Client</th>
+			<th data-field="note" data-sortable="true">Opération</th>
 		</tr>
 	</thead>
 	<tbody>
