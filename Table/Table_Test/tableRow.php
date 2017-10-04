@@ -25,12 +25,15 @@ $compteur=0;
 		
 			if ($compteur %2 == 0) {
 			  //MESSAGE D'ERREUR
-			} else {?>
-				<tr>
-		<td><?php echo $; ?></td>
-		<td><?php echo $; ?></td>
-		<td><?php echo $; ?></td>
-		<td><?php echo $; ?></td>
-	</tr>
-
-	} ?>
+			} else {
+?>	
+	<tr>
+    	<td><?php echo $; ?></td>
+    	<td><?php echo $; ?></td>
+    	<td><?php echo $; ?></td>
+    	<td><?php echo $; ?></td>
+    </tr>
+<?php 
+		} 
+	} 
+?>
