@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<section class="logo">
-		<img src="images/logo.jpg" />
+		<img src="logo.png" />
 		</section>
 		
 		<section class="formulaire">

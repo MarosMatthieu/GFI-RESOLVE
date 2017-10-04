@@ -1,19 +1,24 @@
 
+ 	
 	body
 	{
 		background-color: rgba(251,138,29,1);
-		background-image: radial-gradient;
+		
 	}
+	
+
 	
 	
 	.logo
 	{
-		margin-bottom: 8%;
-		margin-top: 5%;		
+		margin-bottom: 2%;
+		margin-top: 2%;		
 		width: 29.5%;
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
+
 
 	.formulaire
 	{
@@ -64,20 +69,3 @@
   		margin: auto;
   	}
   	
-  	
- @media screen and(max-width: 900px)
- {
- 	input
-	{
-		max-width: 98%;
-		min-width: 98%;	
-		outline: 0;
-  		background: #f2f2f2;
-  		width: 100%;
-  		border: 0;
-  		margin: auto;
-  		font-size: 14px;
-  		border-radius: 10px;
-  		min-width: 150px;
-	}
- }
