@@ -32,7 +32,7 @@ CREATE TABLE contact (
 
 CREATE TABLE prestation (
   prest_Id INT(10) NOT NULL,
-  prest_Titre INT(10) NOT NULL,
+  prest_Titre VARCHAR(255) NOT NULL,
   prest_Date DATETIME NOT NULL,
   prest_Desc VARCHAR(255) NOT NULL,
   prest_DureeMois INT(10),
