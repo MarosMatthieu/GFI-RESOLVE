@@ -12,7 +12,7 @@
 		
 		<section class="formulaire">
 			<form method="post" action="traitement.php">
-				<input type="text" name="Adresse mail" placeholder="login"/>
+				<a href="admin.php" type="text" name="Adresse mail" placeholder="login"> </a>
 			</form>
 			<br/>
 			<form method="post" action="traitement.php">

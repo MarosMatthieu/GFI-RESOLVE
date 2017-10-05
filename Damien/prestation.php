@@ -72,6 +72,8 @@
 
               <li><p class="align_commercial" href="#" data-toggle="dropdown">Jean Commercial</></li>
 
+              <li class=""><a class="" href="prestation.php">Create Prestation</a></li>
+
               <li class=""><a class="" href="allclient.php">All Clients</a></li>
 
               <li class=""><a class="" href="edit.php">Edit Profile</a></li>
@@ -158,38 +160,80 @@
       </nav>
 
 
-<body>
-	<div class="form">
+<div class="form">
     <form class="login-form">
-	<div class="add-client">
-		<h2>Add Client :</h2>
-		<form action="admin.php" method="post">
-			<P>
-				Company Name :<br> 
-				<input type="text" class="form-control" id="company-name" required>
+        <p>
+          <br><br><br>
+           
+            Raison social: 
+            <div class="ui-widget">
+              <input id="tags"/>
+            </div>
 
-				Description :<br> 
-				<input type="text" class="form-control" id="description" required>				
+            <br><br>
+            Contact Name: 
+            <br>
+            <input id="ncontact" name="ccontact" type="text" value="" /> 
 
-				Contact Name :<br> 
-            	<input type="text" class="form-control" id="contact-name" required>
-            	
-            	Contact Surname :<br>
-            	<input type="text" class="form-control" id="contact-surname" required> 
-            	           
-				Mail :<br> 
-				<input type="mail" class="form-control" id="mail" required>				
+            <br><br>
+            Title:
+            <br>
+            <input id="title" name="title" type="text" value="" /> 
 
+            <br><br>
+            Full Description:
+            <br>
+            <input id="fdescript" name="fdescript" type="text" value="" /> 
 
-				Phone :<br> 
-			<input id="phone" type="tel" class="form-control" pattern="^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$" required ><br>				
-			<input id="send" type="submit" value="Submit">
-			</P>
-		</form>
-	</div>
-</form>
+            <br><br>
+            3 main key success factors :
+            <br><br>
+            <textarea id="maink" name="maink" rows=3 cols=40></textarea>
+
+            <br><br>
+            Duration:
+            <br>
+            <input type="text" value="" /> 
+
+            <br><br>
+            Start at the latest:
+            <br>
+            <input id="startlat" name="startlat" type="date" name="d" value="<?php echo $today?>">
+
+            <br><br>
+            Location:
+            <br>
+            <input type="text" value="" /> 
+
+            <br><br>
+            Rate:
+            <br>
+            <input type="text" value="" /> 
+            <br><br>
+
+            Consultants name:
+            <br>
+            <input type="text" value="" /> 
+
+            <br><br>
+
+            <INPUT id="send" name="send" TYPE="submit"  VALUE="Envoyer" action="
+            <?php
+                $sql = "INSERT INTO Prestation (Cl_,Prest_Id) 
+                      VALUES ('".$_POST["login"]."','".$_POST["pass"]."')";
+                $sql = mysql_query($sql);
+               
+            ?>
+            ">
+           
+    
+
+        </p>
+    </form>
 </div>
-        <!--  
+    </main>
+
+    <!--  
     JavaScripts
     =============================================
     -->

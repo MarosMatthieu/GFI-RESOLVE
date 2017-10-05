@@ -2962,10 +2962,8 @@ Google map
   max-width: 360px;
 padding-top: 45px;
 padding-right: 45px;
-  padding-bottom: 100%;
   padding-left: 45px;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
   font-family: "Roboto", sans-serif;
@@ -3064,3 +3062,4 @@ padding-right: 45px;
     box-sizing: border-box;
     font-size: 14px;
 }
+

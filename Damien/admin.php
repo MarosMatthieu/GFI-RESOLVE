@@ -74,7 +74,7 @@
 
               <li class=""><a class="" href="allclient.php">All Clients</a></li>
 
-              <li class=""><a class="" href="edit.php">Edit Profile</a></li>
+              <li class=""><a class="" href="edit.php">Settings</a></li>
 
               <li class=""><a class="" href="logout.php">Sign Out</a></li>
 

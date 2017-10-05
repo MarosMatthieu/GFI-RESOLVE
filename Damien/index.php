@@ -158,85 +158,11 @@
       </nav>
 
 
-<div class="form">
-    <form class="login-form">
-        <p>
-          <br><br><br>
-            Client:
-            <br>
-            <input id="client" name="client" type="text" value="" /> 
-
-
-            <br><br>
-            Raison social: 
-            <div class="ui-widget">
-              <input id="tags"/>
-            </div>
-
-            <br><br>
-            Contact Name: 
-            <br>
-            <input id="ncontact" name="ccontact" type="text" value="" /> 
-
-            <br><br>
-            Title:
-            <br>
-            <input id="title" name="title" type="text" value="" /> 
-
-            <br><br>
-            Full Description:
-            <br>
-            <input id="fdescript" name="fdescript" type="text" value="" /> 
-
-            <br><br>
-            3 main key success factors :
-            <br><br>
-            <textarea id="maink" name="maink" rows=3 cols=40></textarea>
-
-            <br><br>
-            Duration:
-            <br>
-            <input type="text" value="" /> 
-
-            <br><br>
-            Start at the latest:
-            <br>
-            <input id="startlat" name="startlat" type="date" name="d" value="<?php echo $today?>">
-
-            <br><br>
-            Location:
-            <br>
-            <input type="text" value="" /> 
-
-            <br><br>
-            Rate:
-            <br>
-            <input type="text" value="" /> 
-            <br><br>
-
-            Consultants name:
-            <br>
-            <input type="text" value="" /> 
-
-            <br><br>
-
-            <INPUT id="send" name="send" TYPE="submit"  VALUE="Envoyer" action="
-            <?php
-                $sql = "INSERT INTO Prestation (Cl_,Prest_Id) 
-                      VALUES ('".$_POST["login"]."','".$_POST["pass"]."')";
-                $sql = mysql_query($sql);
-               
-            ?>
-            ">
-           
-    
-
-        </p>
-    </form>
-</div>
-    </main>
-
-    <!--  
+<body>
+	<br>
+	<br>
+<h1 class="display-1">Dashboard</h1>
+        <!--  
     JavaScripts
     =============================================
     -->

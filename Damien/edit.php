@@ -74,7 +74,7 @@
 
               <li class=""><a class="" href="allclient.php">All Clients</a></li>
 
-              <li class=""><a class="" href="edit.php">Edit Profile</a></li>
+              <li class=""><a class="" href="edit.php">Settings</a></li>
 
               <li class=""><a class="" href="logout.php">Sign Out</a></li>
 
@@ -159,36 +159,29 @@
 
 
 <body>
+	<br>
 	<div class="form">
-    <form class="login-form">
-	<div class="add-client">
-		<h2>Add Client :</h2>
-		<form action="admin.php" method="post">
-			<P>
-				Company Name :<br> 
-				<input type="text" class="form-control" id="company-name" required>
+        <form class="login-form">
+        	<div class="change-pwd">
+        		<h3>Change Password :</h3>
+        		<input id="send" type="button" value="Enter" onclick="window.location.href='change_pwd.php'" />
+        	</div>
+        	
+        	<br>
 
-				Description :<br> 
-				<input type="text" class="form-control" id="description" required>				
-
-				Contact Name :<br> 
-            	<input type="text" class="form-control" id="contact-name" required>
-            	
-            	Contact Surname :<br>
-            	<input type="text" class="form-control" id="contact-surname" required> 
-            	           
-				Mail :<br> 
-				<input type="mail" class="form-control" id="mail" required>				
-
-
-				Phone :<br> 
-			<input id="phone" type="tel" class="form-control" pattern="^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$" required ><br>				
-			<input id="send" type="submit" value="Submit">
-			</P>
+        	<div class="change-pwd">
+        		<h3>Add user :</h3>
+        		<input id="send" type="button" value="Enter" onclick="window.location.href='add_user.php'" />
+        	</div>
+        	
+        	<br>
+        	<div class="change-pwd">
+        		<h3>Add client :</h3>
+        		<input id="send" type="button" value="Enter" onclick="window.location.href='add_client.php'" />
+        	</div>
 		</form>
 	</div>
-</form>
-</div>
+
         <!--  
     JavaScripts
     =============================================
