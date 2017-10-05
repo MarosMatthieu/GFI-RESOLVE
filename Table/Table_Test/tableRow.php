@@ -1,11 +1,27 @@
 <?php
 
-
 //include le fichier de connexion
-include 'connectAD.php';
+
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+}
+catch (Exception $e)
+{
+    die('Erreur : ' . $e->getMessage());
+}
+
+$host = "217.182.75.177";
+$user = "root";
+$password = "workshopb3";
+$dbname = "gfi_resolve";
+$port='3306';
+break;
+?
+
+
 //Creation et stockage de la requette dans une variable
-$
-sql = "SELECT prest_Statut,prest_Titre,prest_Date, prest_cl_Id 
+$sql= "SELECT prest_Statut,prest_Titre,prest_Date, prest_cl_Id 
 FROM `prestation`, `client`
 WHERE prestation.prest_cl_Id = client.cl_Id;";
 
@@ -24,9 +40,8 @@ $compteur=0;
     		$titre = $ligne[1];
     		$date = $ligne[2];
     		$client = $ligne[3];
-    		$prest_ID = $ligne[4]
-
-		$compteur++;
+    		$prest_ID = $ligne[4];
+    		$compteur = $compteur+1;
 		
 			if ($compteur %2 == 0) {
 			  //MESSAGE D'ERREUR
@@ -41,5 +56,6 @@ $compteur=0;
     </tr>
 <?php 
 		} 
-	} 
+	   }
+    }
 ?>

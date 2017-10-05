@@ -1,0 +1,2 @@
+Connexion PB - 5 Oct 2017 - 10:50:15 - root - 1045 - SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Connexion PB - 5 Oct 2017 - 10:52:23 - root - 1045 - SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)

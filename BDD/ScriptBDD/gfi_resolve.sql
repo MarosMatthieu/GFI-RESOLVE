@@ -25,6 +25,7 @@ CREATE TABLE contact (
   ctc_Nom VARCHAR(64) NOT NULL,
   ctc_Prenom VARCHAR(64) NOT NULL,
   ctc_Mail VARCHAR(64) NOT NULL,
+  ctc_Phone CHAR(10) NOT NULL,
   ctc_Desc VARCHAR(255),
   ctc_cl_Id INT(10) NOT NULL
 );
