@@ -33,7 +33,7 @@
 			<th data-field="note" >Opération</th>
 		</tr>
 	</thead>
-	<?php include 'tableRow.php'; ?>
+	<?php // include 'tableRow.php'; ?>
 </table>
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

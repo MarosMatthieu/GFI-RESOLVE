@@ -4,7 +4,8 @@
 //include le fichier de connexion
 include 'connectAD.php';
 //Creation et stockage de la requette dans une variable
-$sql = "";
+$
+sql = " SELECT ! FROM ! WHERE ! = ? LIMIT 5";
 //execution de la requette avec executeSQL
 $CompteurResultat = compteSQL($sql);
 $Resultat = tableSQL($sql);
@@ -20,6 +21,7 @@ $compteur=0;
     		$TITLE = $ligne[1];
     		$DATE = $ligne[2];
     		$CLIENT = $ligne[3];
+    		$Prest_ID = $ligne[???]
 
 		$compteur++;
 		
@@ -32,6 +34,7 @@ $compteur=0;
     	<td><?php echo 'FUCK' ?></td>
     	<td><?php echo 'FUCK' ?></td>
     	<td><?php echo 'FUCK' ?></td>
+    	<td> </td>
     </tr>
 <?php 
 		} 

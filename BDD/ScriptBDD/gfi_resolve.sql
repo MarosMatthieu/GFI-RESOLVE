@@ -1,7 +1,7 @@
-DROP TABLE prestation;
-DROP TABLE contact;
-DROP TABLE client;
-DROP TABLE commercial;
+ DROP TABLE prestation;
+ DROP TABLE contact;
+ DROP TABLE client;
+ DROP TABLE commercial;
 --
 -- Table structure for table commune
 --
@@ -34,8 +34,8 @@ CREATE TABLE prestation (
   prest_Titre INT(10) NOT NULL,
   prest_Date DATETIME NOT NULL,
   prest_Desc VARCHAR(255) NOT NULL,
-  prest_DureeMois INT(10) NOT NULL,
-  prest_DureeFreq INT(10) NOT NULL,
+  prest_DureeMois INT(10),
+  prest_DureeFreq INT(10),
   prest_Consultant1 VARCHAR(64) NOT NULL,
   prest_Consultant2 VARCHAR(64),
   prest_Consultant3 VARCHAR(64),
@@ -47,7 +47,8 @@ CREATE TABLE prestation (
   prest_MKSF3 VARCHAR(255),
   prest_Statut VARCHAR(8) NOT NULL,
   prest_DateDep DATETIME NOT NULL,
-  prest_Loc VARCHAR(255) NOT NULL,
+  prest_Loc VARCHAR(255) NOT NULL
+  ,
   prest_com_Id INT(10) NOT NULL,
   prest_cl_Id INT(10) NOT NULL
 );
