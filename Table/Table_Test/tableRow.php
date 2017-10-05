@@ -14,21 +14,27 @@ if (!$result) {
 }
 
 $row = mysqli_fetch_assoc($result);
-foreach ($result as $ligne) {
 
+$compteur = 0;
+
+    $compteur = $compteur +1;
+    foreach($result as $ligne) {
+  
+        while ($compteur<=2) {
+            $compteur = $compteur +1;
 ?>
 	<tr>
-	
-
-    		
     	<td><?php echo $ligne['prest_Statut'] ?></td>
     	<td><?php echo $ligne['prest_Titre'] ?></td>
     	<td><?php echo $ligne['prest_Date'] ?></td>
     	<td><?php echo $ligne['cl_Nom'] ?></td>
-    	<td><?php echo '<a href="tableRow.php">Supprimer</a>'?>
+    	<td> <input type='button'></td>
+    	
     </tr>
-<?php 
+<?php
 }
+}
+
 ?>
 <tbody>
 <?php
