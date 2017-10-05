@@ -26,11 +26,11 @@
 	
 	
 		<tr>
-			<th data-field="state" data-sortable="true">Etat</th>
+			<th data-field="state" data-sortable="true">State</th>
 			<th data-field="prenom" data-filter-control="input" data-sortable="true">Title</th>
 			<th data-field="date" data-filter-control="select" data-sortable="true">Date</th>
 			<th data-field="examen" data-filter-control="select" data-sortable="true">Client</th>
-			<th data-field="note" >Opération</th>
+			<th data-field="note" data-filter-control="input" >Opération</th>
 		</tr>
 	</thead>
 	<?php  include 'tableRow.php'; ?>
