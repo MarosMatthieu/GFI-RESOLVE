@@ -5,7 +5,10 @@
 include 'connectAD.php';
 //Creation et stockage de la requette dans une variable
 $
-sql = " SELECT ! FROM ! WHERE ! = ? LIMIT 5";
+sql = "SELECT prest_Statut,prest_Titre,prest_Date, prest_cl_Id 
+FROM `prestation`, `client`
+WHERE prestation.prest_cl_Id = client.cl_Id;";
+
 //execution de la requette avec executeSQL
 $CompteurResultat = compteSQL($sql);
 $Resultat = tableSQL($sql);
@@ -17,11 +20,11 @@ $compteur=0;
     if ($Resultat>0) {
         foreach ($Resultat as $ligne) {
     		//on extrait chaque valeur de la ligne courante de chaque tournees.
-    		$ETAT = $ligne[0];
-    		$TITLE = $ligne[1];
-    		$DATE = $ligne[2];
-    		$CLIENT = $ligne[3];
-    		$Prest_ID = $ligne[???]
+    		$etat = $ligne[0];
+    		$titre = $ligne[1];
+    		$date = $ligne[2];
+    		$client = $ligne[3];
+    		$prest_ID = $ligne[4]
 
 		$compteur++;
 		
