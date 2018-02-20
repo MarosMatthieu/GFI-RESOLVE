@@ -37,7 +37,7 @@ function compteSQL($sql) {
  * @param sql string
  *  <p>Requete SQL.</p>
  *
- *
+ *tew
  * @return un tableau résultat de la requete MySQL.
  *
  * exemple : 	$sql = "select * from user";
